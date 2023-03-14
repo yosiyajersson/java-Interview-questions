@@ -112,7 +112,7 @@ That being said, you can still override a method that is implemented using a lam
 Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated as if they are objects of the same class. There are two types of polymorphism in Java: runtime polymorphism (also known as dynamic polymorphism) and compile-time polymorphism (also known as static polymorphism).
 
 ### Runtime Polymorphism: 
-	Runtime polymorphism is achieved when a subclass of a class overrides a method that is already defined in its superclass. At runtime, the JVM determines which version of the method to call based on the type of the object that is being referred to, not the type of the reference variable.
+Runtime polymorphism is achieved when a subclass of a class overrides a method that is already defined in its superclass. At runtime, the JVM determines which version of the method to call based on the type of the object that is being referred to, not the type of the reference variable.
 ### Example:
 
 		class Animal {
@@ -190,7 +190,7 @@ You can use the orElse() method to retrieve the value from the Optional object, 
 		int result2 = optionalNull.orElse(0); // Returns 0
 
 ### orElseGet() Method: 
-	Similar to orElse(), you can use the orElseGet() method to retrieve the value from the Optional object or a default value, but you can provide a Supplier as an argument to generate the default value only if the value is not present. 
+Similar to orElse(), you can use the orElseGet() method to retrieve the value from the Optional object or a default value, but you can provide a Supplier as an argument to generate the default value only if the value is not present. 
 ### For example:
 
 		Optional<Integer> optionalNull = Optional.empty();
@@ -200,11 +200,15 @@ You can use the orElse() method to retrieve the value from the Optional object, 
 		}); // Returns 0
 		
 ### orElseThrow() Method: 
-You can use the orElseThrow() method to retrieve the value from the Optional object or throw an exception if the value is not present. For example:
+You can use the orElseThrow() method to retrieve the value from the Optional object or throw an exception if the value is not present. 
 
+### For example:
 		Optional<Integer> optionalNull = Optional.empty();
 		int result = optionalNull.orElseThrow(() -> new RuntimeException("Value not present"));
-		ifPresent() Method: You can use the ifPresent() method to perform an action if the value is present in the Optional object. For example:
+		
+### ifPresent() Method:
+You can use the ifPresent() method to perform an action if the value is present in the Optional object. 
+### For example:
 
 		Optional<Integer> optionalInt = Optional.of(10);
 		optionalInt.ifPresent(value -> {
