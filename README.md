@@ -1,6 +1,7 @@
 # Java 8 features.
-	Lambda expressions: Java 8 introduces lambda expressions, which allow developers to write more concise and readable code. Lambda expressions are anonymous functions that can be passed around like values and used to represent code blocks.
-
+	**Lambda expressions:**
+	1.Java 8 introduces lambda expressions, which allow developers to write more concise and readable code. 
+	2.Lambda expressions are anonymous functions that can be passed around like values and used to represent code blocks.
 	Stream API: Java 8 also introduced the Stream API, which provides a functional programming-style approach to processing collections of data. Streams can be used to filter, map, and reduce data, making it easier to work with large data sets.
 
 	Date and Time API: Java 8 introduces a new Date and Time API, which provides a more comprehensive and flexible way to work with dates and times. The new API includes classes such as LocalDate, LocalTime, and ZonedDateTime, which are designed to handle time zones and daylight saving time changes.
