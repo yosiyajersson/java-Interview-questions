@@ -207,7 +207,7 @@ optionalInt.ifPresent(value -> {
 });
 By using these methods, you can safely retrieve data from an Optional object in Java.
 
-What are the collections you know?
+# What are the collections you know?
 	In Java, there are several types of collections that are used to store and manipulate groups of objects. Here are the main types of collections in Java:
 
 List: A List is an ordered collection of elements that can contain duplicates. It is implemented by several classes, including ArrayList, LinkedList, and Vector.
@@ -226,7 +226,7 @@ Vector: A Vector is a synchronized version of the ArrayList class, meaning that 
 
 Each collection type has its own characteristics, strengths, and weaknesses, and choosing the right collection type for a particular task is an important aspect of programming in Java.
 
-what is the difference between set and list
+# what is the difference between set and list
 	In Java, both Set and List are interfaces used to store collections of objects, but they have some fundamental differences:
 
 	Order: A List is an ordered collection of elements, meaning that the elements are stored in a specific sequence and each element has a unique index position. In contrast, a Set is an unordered collection of elements, meaning that the elements are not stored in any particular sequence.
