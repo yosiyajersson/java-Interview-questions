@@ -1,4 +1,4 @@
-# Java 8 features ?
+# 1.Java 8 features ?
 ### Lambda expressions: 
 Java 8 introduces lambda expressions, which allow developers to write more concise and readable code. Lambda expressions are anonymous functions that can be passed around like values and used to represent code blocks.
 
@@ -25,7 +25,7 @@ Java 8 introduces parallel arrays, which are arrays that can be processed in par
 
 These are some of the key features of Java 8. Other enhancements include improved annotations, enhanced security, and better support for JavaScript and other scripting languages.
 
-# what is meta space
+# 2.what is meta space ?
 Meta space is a new memory space introduced in Java 8 as a replacement for the permanent generation (PermGen) space in earlier versions of Java. Meta space is used to store metadata about classes, methods, and other structures that are used by the Java Virtual Machine (JVM).
 
 The PermGen space in earlier versions of Java was known to cause problems due to its fixed size and the fact that it could become full if too many classes or other structures were loaded into memory. In contrast, meta space is designed to be more flexible and dynamic, allowing it to expand and contract as needed.
@@ -36,7 +36,7 @@ Meta space also includes a number of optimizations that are designed to improve 
 
 Overall, meta space is an important improvement in Java 8 that helps to address some of the memory management issues that were present in earlier versions of the JVM. By providing a more flexible and dynamic memory space for storing metadata, meta space helps to improve performance and reduce the risk of out-of-memory errors.
 
-# what is voletile key word
+# 3.what is volatile key word?
 In Java, the volatile keyword is used as a modifier for variables to indicate that their values may be modified by multiple threads concurrently. When a variable is declared as volatile, it guarantees that any thread accessing the variable will see the most up-to-date value of the variable, even if it has been modified by another thread.
 
 This behavior is different from non-volatile variables, which may be cached by each thread, leading to the possibility that a thread may not see the most recent value of the variable.
@@ -45,7 +45,7 @@ The volatile keyword is often used in multi-threaded programs to ensure that cha
 
 It is also worth noting that while volatile variables are guaranteed to be visible to other threads, they may not be suitable for all multi-threaded scenarios. In some cases, more advanced synchronization mechanisms such as locks or atomic variables may be required to ensure thread safety and prevent race conditions.
 	
-# how to achive multiple inheritance in java?
+# 4.how to achive multiple inheritance in java?
 In Java, multiple inheritance is not supported directly. This means that a class cannot inherit from multiple classes at the same time. However, there are a few ways to achieve similar functionality:
 
 ### Interfaces: 
@@ -59,7 +59,7 @@ Instead of inheriting from multiple classes, a class can be composed of multiple
 
 It's worth noting that while multiple inheritance can be useful in some situations, it can also lead to complex and brittle code. By using interfaces, default methods, and composition, it's often possible to achieve similar functionality while maintaining code simplicity and flexibility.
 	
-# What is optional In java
+# 5.What is Optional In java?
 Optional is a class introduced in Java 8 that provides a way to express the presence or absence of a value. It is intended to be used as a safer alternative to using null references, which can often lead to NullPointerException errors.
 
 An Optional instance can either be empty or contain a single non-null value. When an Optional instance contains a value, it is said to be "present", and when it does not contain a value, it is said to be "empty".
@@ -68,7 +68,7 @@ Optional provides a number of methods for working with the contained value, incl
 
 Using Optional can help to make code more robust and less prone to NullPointerException errors, since it forces the programmer to explicitly handle the case where a value may be absent. It also provides a more expressive way to communicate the presence or absence of a value, which can make code more self-documenting and easier to understand.
 
-# what is functional Interface?
+# 6.what is functional Interface?
 In Java, a functional interface is an interface that has only one abstract method, called the "functional method". Functional interfaces are often used in conjunction with lambda expressions, which allow the functional method to be implemented inline without the need for a separate class definition.
 
 Functional interfaces are marked with the @FunctionalInterface annotation, which ensures that the interface has only one abstract method. This annotation is optional, but can help to make the intent of the interface clear to other developers.
@@ -77,7 +77,7 @@ Examples of functional interfaces in Java include Runnable, Comparator, and Supp
 
 Functional interfaces are a key concept in functional programming, which emphasizes the use of functions as first-class citizens in programming. By using functional interfaces in Java, it is possible to write code that is more concise, expressive, and composable.
 
-# what is default and static methods?
+# 7.what is default and static methods?
 In Java 8, default and static methods were introduced in interfaces to provide additional functionality without breaking existing implementations.
 
 ### Default methods: 
@@ -99,7 +99,7 @@ A static method is a method defined in an interface that can be called directly 
 		}
 Default and static methods are useful for adding new features to existing interfaces without breaking existing code. They also provide a way to implement certain design patterns, such as the adapter pattern, more easily.
 
-# is it possible to override the method inside lamda expression?
+# 8.is it possible to override the method inside lamda expression?
 Lambda expressions in Java provide a concise way to represent a method as an instance of a functional interface, and they can be used to implement the functional method of a functional interface.
 
 However, a lambda expression is not a method that can be overridden. It is simply an instance of a functional interface that provides an implementation for its functional method.
@@ -108,7 +108,7 @@ In other words, a lambda expression provides an implementation for a functional 
 
 That being said, you can still override a method that is implemented using a lambda expression by providing a different implementation of the same functional interface. This can be done either by providing a new lambda expression with a different implementation of the functional method, or by implementing the interface with a traditional method in a subclass.
 
-# what is runtime polimorpism and compile time polimorpism
+# 9.what is runtime polimorpism and compile time polimorpism
 Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated as if they are objects of the same class. There are two types of polymorphism in Java: runtime polymorphism (also known as dynamic polymorphism) and compile-time polymorphism (also known as static polymorphism).
 
 ### Runtime Polymorphism: 
@@ -153,7 +153,7 @@ Compile-time polymorphism is achieved through method overloading, which allows m
 		double sum2 = calc.add(2.5, 3.7); // Calls double add(double a, double b)
 In the above example, the add() method is overloaded with two versions that accept different types of arguments. The correct version of the method is determined at compile-time based on the types of the arguments that are passed to the method.
 
-# what are the memories are there in java?
+# 10.what are the memories are there in java?
 
 In Java, there are several types of memory that are used for different purposes during the execution of a program. Here are some of the main types of memory used in Java:
 
@@ -174,7 +174,7 @@ The program counter register is a small amount of memory used by the JVM to keep
 
 These different types of memory are used for different purposes in Java and are managed by the JVM. Proper management of memory is important to avoid memory leaks, out-of-memory errors, and other performance issues in Java programs.
 
-# how to get data from Optional
+# 11.how to get data from Optional?
 In Java, Optional is a class that is used to represent a value that may or may not be present. If a value is present, you can use the get() method to retrieve it from the Optional object. However, it is generally recommended to avoid using the get() method, as it may throw a NoSuchElementException if the value is not present. Instead, you can use other methods provided by the Optional class to retrieve the value safely.
 
 ### Here are some ways to retrieve data from an Optional object:
@@ -218,7 +218,7 @@ You can use the ifPresent() method to perform an action if the value is present 
 		
 By using these methods, you can safely retrieve data from an Optional object in Java.
 
-# What are the collections you know?
+# 12.What are the collections you know?
 In Java, there are several types of collections that are used to store and manipulate groups of objects. Here are the main types of collections in Java:
 
 ### List: 
