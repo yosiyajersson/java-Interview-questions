@@ -693,3 +693,6 @@ To perform a join query using JPA, you can use JPQL (Java Persistence Query Lang
 In this example, the JOIN keyword is used to join the Employee and Department entities on the department field. The WHERE clause is used to filter the results by department name. The entityManager object is an instance of EntityManager, which is used to interact with the JPA persistence context.
 
 
+
+
+
