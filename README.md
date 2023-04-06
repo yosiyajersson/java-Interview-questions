@@ -692,6 +692,30 @@ To perform a join query using JPA, you can use JPQL (Java Persistence Query Lang
 
 In this example, the JOIN keyword is used to join the Employee and Department entities on the department field. The WHERE clause is used to filter the results by department name. The entityManager object is an instance of EntityManager, which is used to interact with the JPA persistence context.
 
+# default functional interfaces in java 8 ?
+
+In Java 8, default functional interfaces are interfaces that have a single abstract method (SAM) and a default implementation for one or more additional methods. These interfaces are also known as "functional interfaces" because they can be used as the target type for lambda expressions or method references.
+
+Some of the default functional interfaces in Java 8 include:
+
+Predicate<T> - Represents a function that takes an argument of type T and returns a boolean value.
+
+Consumer<T> - Represents a function that takes an argument of type T and returns no result.
+
+Supplier<T> - Represents a function that takes no arguments and returns a value of type T.
+
+Function<T, R> - Represents a function that takes an argument of type T and returns a result of type R.
+
+UnaryOperator<T> - Represents a function that takes an argument of type T and returns a result of type T.
+
+BinaryOperator<T> - Represents a function that takes two arguments of type T and returns a result of type T.
+
+Runnable - Represents a function that takes no arguments and returns no result.
+
+Callable<T> - Represents a function that takes no arguments and returns a value of type T.
+
+These default functional interfaces provide a convenient and easy-to-use way to implement functional programming in Java 8.
+
 
 
 
