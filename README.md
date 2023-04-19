@@ -717,6 +717,42 @@ Callable<T> - Represents a function that takes no arguments and returns a value 
 These default functional interfaces provide a convenient and easy-to-use way to implement functional programming in Java 8.
 
 
+# Exception Hierarchy
+		Throwable
+		├── Error
+		│   ├── AssertionError
+		│   ├── OutOfMemoryError
+		│   ├── StackOverflowError
+		│   ├── ThreadDeath
+		│   └── ...
+		│
+		└── Exception
+		    ├── RuntimeException
+		    │   ├── ArithmeticException
+		    │   ├── ArrayIndexOutOfBoundsException
+		    │   ├── ClassCastException
+		    │   ├── NullPointerException
+		    │   ├── IllegalArgumentException
+		    │   ├── IndexOutOfBoundsException
+		    │   ├── IllegalStateException
+		    │   ├── UnsupportedOperationException
+		    │   └── ...
+		    │
+		    ├── IOException
+		    │   ├── FileNotFoundException
+		    │   ├── InterruptedIOException
+		    │   ├── EOFException
+		    │   └── ...
+		    │
+		    ├── SQLException
+		    ├── ClassNotFoundException
+		    ├── CloneNotSupportedException
+		    ├── InterruptedException
+		    ├── ReflectiveOperationException
+		    └── ...
+
+
+
 
 
 
